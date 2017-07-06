@@ -2,6 +2,10 @@ global:
   scrape_interval:     30s
   evaluation_interval: 30s
 
+  labels:
+    cluster: swarm
+    replica: "1"
+
   external_labels:
     monitor: 'prometheus-swarm'
 
