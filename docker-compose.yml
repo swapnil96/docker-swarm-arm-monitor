@@ -26,6 +26,22 @@ services:
           cpus: '0.10'
           memory: 64M
 
+  docker-exporter:
+    image: swapnil18/docker-swarm-arm-socat:temp
+    ports:
+      - "4999:4999"
+    networks:
+      - monitoring
+    deploy:
+      mode: global
+      resources:
+        limits:
+          cpus: '0.05'
+          memory: 6M
+        reservations:
+          cpus: '0.05'
+          memory: 4M
+
   prometheus:
     image: swapnil18/docker-swarm-arm-monitor
     ports:

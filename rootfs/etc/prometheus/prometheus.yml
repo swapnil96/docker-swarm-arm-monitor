@@ -20,4 +20,9 @@ scrape_configs:
       type: 'A'
       port: 8080
 
-
+  - job_name: 'docker-exporter'
+    dns_sd_configs:
+    - names:
+      - 'tasks.docker-exporter'
+      type: 'A'
+      port: 4999
