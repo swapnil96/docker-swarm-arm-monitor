@@ -5,7 +5,7 @@ networks:
 
 services:
   cadvisor:
-    image: braingamer/cadvisor-arm
+    image: swapnil18/docker-arm-cadvisor
     ports:
       - "8080:8080"
     networks:
