@@ -18,4 +18,5 @@ All the global services needs to be replicated once in all the nodes and the oth
 After getting done with the setup use a built in dashboard provided in the **dashboard** folder or check grafana's website.
 Here is one [Docker Swarm & Container Overview](https://grafana.com/dashboards/609). It modifies a little bit the original dashboard to adapt the graphs to fit better with a Docker swarm cluster which is running cAdvisor and Node Exporter on each node.
 
-
+## Contribution
+If you have any suggestions then please put a pull request. Also if you like the work then star the repo :p
